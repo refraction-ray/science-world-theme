@@ -228,7 +228,7 @@ a.bg {
 .cover {
     color: $grey;
     height: 100vh;
-    //background-color:#;
+    background-color: $default-background-color;
     background:url($bgpath) no-repeat center center;// fixed;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;          /* Firefox */
