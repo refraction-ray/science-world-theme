@@ -2,14 +2,15 @@
  * Site header
  */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     :root {
-    font-size:15px
+        font-size: 15px
     }
 }
-@media screen and (min-width: 600px){
+
+@media screen and (min-width: 600px) {
     :root {
-    font-size:18px
+        font-size: 18px
     }
 }
 
@@ -20,7 +21,7 @@
 a.bg {
     color: $grey;
     font-weight: 320;
-    
+
 }
 
 
@@ -57,6 +58,7 @@ a.bg {
     .page-link {
         color: #444;
     }
+
     .page-link {
         display: block;
         padding: 5px 10px;
@@ -78,7 +80,7 @@ a.bg {
     margin-left: 0;
     list-style: none;
 
-    > li {
+    >li {
         margin-bottom: $spacing-unit;
     }
 }
@@ -205,7 +207,7 @@ a.bg {
     padding: 0 10px;
 }
 
-.home  a {
+.home a {
     font-family: 'Open Sans', sans-serif;
     font-size: 36px;
     color: #444;
@@ -214,10 +216,10 @@ a.bg {
 
 .home a:hover {
     background: #fafafd;
-    outline:  1px solid #C3D5E4;
+    outline: 1px solid #C3D5E4;
 }
 
-.home  a::before {
+.home a::before {
     width: 0;
 }
 
@@ -229,12 +231,16 @@ a.bg {
     color: $grey;
     height: 100vh;
     //background-color: $default-background-color;
-    background: $default-background-color url($bgpath) no-repeat center center;// fixed;
+    background: $default-background-color url($bgpath) no-repeat center center; // fixed;
     image-rendering: crisp-edges;
-    image-rendering: -moz-crisp-edges;          /* Firefox */
-    image-rendering: -o-crisp-edges;            /* Opera */
-    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
-    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming)*/
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -247,63 +253,65 @@ a.bg {
 
 
 .clock {
-  height: 6rem;
-  left: 5%;
-  //color: #f4f5f7;
-  font-size: 5rem;//22vh;
-  width: 25rem;
-  top: 40%;
-  //font-family: sans-serif;
-  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;//'Share Tech Mono';
-  line-height: 5rem;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  text-shadow: 0 0 20px #8f9394,  0 0 20px #86919400;
+    height: 6rem;
+    left: 5%;
+    //color: #f4f5f7;
+    font-size: 5rem; //22vh;
+    width: 25rem;
+    top: 40%;
+    //font-family: sans-serif;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; //'Share Tech Mono';
+    line-height: 5rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 0 20px #8f9394, 0 0 20px #86919400;
 }
 
-.clock::before, .clock::after {
-  content: '';
-  width: 25rem;
-  position: absolute;
-  z-index: 2;
+.clock::before,
+.clock::after {
+    content: '';
+    width: 25rem;
+    position: absolute;
+    z-index: 2;
 }
 
 .clock::after {
-  bottom: 0;
-  background: linear-gradient(to bottom, transparent, black);
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, black);
 }
 
-.clock > div {
-  display: flex;
+.clock>div {
+    display: flex;
 }
 
 .tick {
-  line-height: 5rem;
+    line-height: 5rem;
 }
 
 .tick-hidden {
-  opacity: 0;
+    opacity: 0;
 }
 
 .move {
-  animation: move linear 1s infinite;
+    animation: move linear 1s infinite;
 }
 
 @keyframes move {
-  from {
-    transform: translateY(0vh);
-  }
-  to {
-    transform: translateY(-20vh);
-  }
+    from {
+        transform: translateY(0vh);
+    }
+
+    to {
+        transform: translateY(-20vh);
+    }
 }
 
 @media screen and (max-width: 900px) {
-.clock{
-    display: none;
-    visibility: hidden;
-}
+    .clock {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 
@@ -348,7 +356,7 @@ a.bg {
     cursor: pointer;
 }
 
-.site-name__inner :hover{
+.site-name__inner :hover {
     color: #8c9be8;
     transition-duration: 1s;
     text-decoration: none;

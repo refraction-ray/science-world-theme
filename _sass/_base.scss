@@ -2,14 +2,28 @@
  * Reset some basic elements
  */
 
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
     margin: 0;
     padding: 0;
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
@@ -31,9 +45,19 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
@@ -53,7 +77,7 @@ img {
 /**
  * Figures
  */
-figure > img {
+figure>img {
     display: block;
 }
 
@@ -66,14 +90,16 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
+ul,
+ol {
     margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
+
+    >ul,
+    >ol {
+        margin-bottom: 0;
     }
 }
 
@@ -82,7 +108,12 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 300;
 }
 
@@ -166,7 +197,7 @@ code {
  */
 .icon {
 
-    > svg {
+    >svg {
         display: inline-block;
         width: 16px;
         height: 16px;
