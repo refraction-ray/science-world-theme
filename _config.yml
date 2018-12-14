@@ -1,0 +1,13 @@
+# Site settings
+title: XYZ Group
+# email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  A new world of science
+baseurl: "/demo/science-world" # the subpath of your site, e.g. /blog/
+bgurl: "/demo/science-world/bg.jpg" # the path of the background image
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+content: true # whether showing post-list in the index page
+permalink: /:title
+# Build settings
+markdown: kramdown
+

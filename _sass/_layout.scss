@@ -1,0 +1,355 @@
+/**
+ * Site header
+ */
+
+@media screen and (max-width: 600px){
+    :root {
+    font-size:15px
+    }
+}
+@media screen and (min-width: 600px){
+    :root {
+    font-size:18px
+    }
+}
+
+::selection {
+    background-color: $selection-color;
+}
+
+a.bg {
+    color: $grey;
+    font-weight: 320;
+    
+}
+
+
+.site-header {
+    font-family: 'Source Sans Pro', sans-serif;
+    min-height: 56px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.site-header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    color: #444;
+}
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+
+    .page-link {
+        color: #444;
+    }
+    .page-link {
+        display: block;
+        padding: 5px 10px;
+    }
+}
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #373737;
+    max-width: 540px;
+    padding: 0px 10px;
+    margin: 0 auto;
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    font-family: 'Open Sans', sans-serif;
+    color: #373737;
+    margin-bottom: $spacing-unit;
+
+    p {
+        max-width: 540px;
+        padding: 0px 10px;
+        margin: 0 auto;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-family: 'Source Sans Pro', sans-serif;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+
+        max-width: 540px;
+        padding: 0px 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 26px;
+        font-family: 'Source Sans Pro', sans-serif;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+
+        max-width: 540px;
+        padding: 0px 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+
+        max-width: 540px;
+        padding: 0px 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .highlight {
+        font-family: Consolas;
+        color: #333;
+        z-index: -1;
+        background: #fafafd;
+        border: 0.063em solid #dedede;
+        border-right: 0em solid #fff;
+        line-height: 1.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        left: 0;
+        right: 0;
+        margin: 20px 0px;
+    }
+
+    ul {
+        max-width: 540px;
+        padding: 0 10px;
+        padding-left: 40px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+/**
+ * Home
+ */
+.home {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.home  a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    color: #444;
+    padding: 10px;
+}
+
+.home a:hover {
+    background: #fafafd;
+    outline:  1px solid #C3D5E4;
+}
+
+.home  a::before {
+    width: 0;
+}
+
+.home .post-meta {
+    text-align: right;
+}
+
+.cover {
+    color: $grey;
+    height: 100vh;
+    //background-color:#;
+    background:url($bgpath) no-repeat center center;// fixed;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;          /* Firefox */
+    image-rendering: -o-crisp-edges;            /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/**
+ * clock css
+ */
+
+
+.clock {
+  height: 6rem;
+  left: 5%;
+  //color: #f4f5f7;
+  font-size: 5rem;//22vh;
+  width: 25rem;
+  top: 40%;
+  //font-family: sans-serif;
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;//'Share Tech Mono';
+  line-height: 5rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 0 20px #8f9394,  0 0 20px #86919400;
+}
+
+.clock::before, .clock::after {
+  content: '';
+  width: 25rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.clock::after {
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, black);
+}
+
+.clock > div {
+  display: flex;
+}
+
+.tick {
+  line-height: 5rem;
+}
+
+.tick-hidden {
+  opacity: 0;
+}
+
+.move {
+  animation: move linear 1s infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-20vh);
+  }
+}
+
+@media screen and (max-width: 900px) {
+.clock{
+    display: none;
+    visibility: hidden;
+}
+}
+
+
+.site-name {
+    max-width: 56rem;
+    padding: 0 10px;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
+    height: 100%;
+}
+
+.site-name__inner {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    right: 5%;
+    width: 26rem;
+}
+
+.site-name__inner .name {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.site-name__inner .desc {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.site-name__inner .btn {
+    font-size: 1rem;
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #fff;
+    display: inline-block;
+    margin-top: 10%;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.site-name__inner :hover{
+    color: #8c9be8;
+    transition-duration: 1s;
+    text-decoration: none;
+}
